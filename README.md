@@ -62,3 +62,34 @@
     ```
     <b>Hasil</b><br>
    ![Gambar1](img/kontak.png)
+6. Membuat Routing
+Routing digunakan untuk mempermudah akses halaman web agar SEO Friendly.<br>
+Membuat file index.php
+    ```php
+        <?php
+        $mod = $_REQUEST['mod'];
+        switch ($mod) {
+            case "home":
+                require("home.php");
+                break;
+            case "about":
+                require("about");
+                break;
+            case "kontak":
+                require("kontak");
+                break;
+        }
+    ```
+7. Membuat file .htaccess
+```php
+    <IfModule mod_rewrite.c>
+        RewriteEngine On
+        RewriteBase /lab4/
+        RewriteCond %{REQUEST_FILENAME} !-f
+        RewriteCond %{REQUEST_FILENAME} !-d
+        RewriteRule ^(.*)$ index.php?mod=$1 [L]
+    </IfModule>
+```
+    <br>
+• Berikut ini adalah demo dari project
+![Gambar1](img/modularphp.gif)
