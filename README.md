@@ -38,6 +38,8 @@
     </div>
     <?php require('footer.php'); ?>
     ```
+    <b>Hasil</b><br>
+   ![Gambar1](img/home.png)
 4. buat file about.php untuk mengakses halaman ABOUT
     ```php
     <?php require('header.php'); ?>
@@ -47,6 +49,8 @@
     </div>
     <?php require('footer.php'); ?>
     ```
+    <b>Hasil</b><br>
+   ![Gambar1](img/about.png)
 5. buat file kontak.php untuk mengakses halaman KONTAK
     ```php
     <?php require('header.php'); ?>
@@ -56,3 +60,5 @@
     </div>
     <?php require('footer.php'); ?>
     ```
+    <b>Hasil</b><br>
+   ![Gambar1](img/kontak.png)
